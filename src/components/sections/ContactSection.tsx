@@ -205,6 +205,8 @@ export const ContactSection: React.FC = () => {
                   href="/resume/Bhavesh-Rewatkar-Resume.pdf"
                   variant="glass"
                   size="sm"
+                  iconType="external"
+                  target="_blank"
                   download="Bhavesh-Rewatkar-Resume.pdf"
                   className="ml-auto"
                 >

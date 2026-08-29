@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from '../common/SectionHeading';
 import { CTAButton } from '../common/CTAButton';
-import { Shield, Smartphone, UserCheck, Zap } from 'lucide-react';
+import { Shield, Smartphone, Zap } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -94,8 +94,12 @@ export const AboutSection: React.FC = () => {
             {/* Identity Card Header */}
             <div className="flex items-center justify-between pb-6 border-b border-white/10 relative z-10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-accent-warm/10 border border-accent-warm/30 flex items-center justify-center text-accent-warm">
-                  <UserCheck className="w-5 h-5" />
+                <div className="w-11 h-11 rounded-xl bg-accent-warm/10 border border-accent-warm/30 overflow-hidden flex-shrink-0">
+                  <img
+                    src="/images/bhavesh-rewatkar.jpg"
+                    alt="Bhavesh Rewatkar - Developer"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div>
                   <h4 className="font-heading font-black text-lg text-white">

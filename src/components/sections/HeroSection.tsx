@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Terminal } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { CTAButton } from '../common/CTAButton';
 import { TechBadge } from '../common/TechBadge';
 import { GithubIcon, LinkedinIcon, FacebookIcon } from '../common/BrandIcons';
@@ -154,6 +154,7 @@ export const HeroSection: React.FC = () => {
                   variant="glass"
                   size="md"
                   iconType="external"
+                  target="_blank"
                   download="Bhavesh-Rewatkar-Resume.pdf"
                 >
                   Download Resume
@@ -239,18 +240,14 @@ export const HeroSection: React.FC = () => {
                   {/* Visual Portrait / High-Tech Developer Avatar Representation */}
                   <div className="relative z-10 my-auto flex flex-col items-center text-center">
                     <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1 bg-gradient-to-br from-accent-warm via-accent-orange to-accent-cyan shadow-glow-orange animate-float">
-                      <div className="w-full h-full rounded-full bg-[#0D0D14] flex flex-col items-center justify-center p-4 border border-white/20 overflow-hidden relative">
-                        {/* Futuristic Tech Core Graphic */}
-                        <div className="absolute inset-0 bg-radial-gradient from-accent-warm/20 to-transparent" />
-                        <div className="w-16 h-16 rounded-2xl bg-card border border-white/20 flex items-center justify-center shadow-inner relative z-10 mb-2">
-                          <Terminal className="w-8 h-8 text-accent-warm" />
-                        </div>
-                        <span className="font-heading font-black text-xs uppercase tracking-widest text-white relative z-10">
-                          BHAVESH
-                        </span>
-                        <span className="font-mono text-[10px] text-accent-cyan relative z-10">
-                          FULL-STACK ANDROID
-                        </span>
+                      <div className="w-full h-full rounded-full bg-[#0D0D14] overflow-hidden relative border border-white/20">
+                        <img
+                          src="/images/bhavesh-rewatkar.jpg"
+                          alt="Bhavesh Rewatkar - Developer"
+                          className="w-full h-full object-cover object-top filter contrast-[1.05] brightness-[1.02]"
+                        />
+                        {/* Subtle ambient vignette */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/40 via-transparent to-transparent pointer-events-none" />
                       </div>
                     </div>
 

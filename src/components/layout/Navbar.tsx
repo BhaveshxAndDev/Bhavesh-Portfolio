@@ -283,6 +283,7 @@ export const Navbar: React.FC = () => {
                   variant="glass"
                   size="md"
                   iconType="external"
+                  target="_blank"
                   download="Bhavesh-Rewatkar-Resume.pdf"
                 >
                   Resume
